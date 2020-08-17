@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Pattern Checker</string>
+    <string name="app_name">Number Checker + Factorial Calculator</string>
+    <string name="fact">Factorial</string>
+    <string name="eveOdd">Even Odd</string>
+    <string name="prime">Prime Number</string>
+    <string name="armst">Armstrong Number</string>
+    <string name="opTxt">No Button Clicked</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="copywright">©2020 Made By Rishabh Panesar.</string>
 </resources>
