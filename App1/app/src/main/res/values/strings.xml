@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Basic Calculator</string>
+    <string name="enter_first_number">Enter First Number (Enter here for factorial)</string>
+    <string name="add_text">+</string>
+    <string name="sub_text">-</string>
+    <string name="mul_text">x</string>
+    <string name="div_text">÷</string>
+    <string name="fact_text">Factorial</string>
+    <string name="enter_second_number">Enter Second Number</string>
+    <string name="result_txt">RESULT :</string>
+</resources>
