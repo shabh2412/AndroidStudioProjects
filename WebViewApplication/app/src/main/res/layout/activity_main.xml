@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_text_main"
+        style="@style/general_text_style"
+        android:text="@string/title_of_app"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <TextView
+        android:id="@+id/intoText"
+        style="@style/general_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0"
+        android:paddingStart="14dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="0dp"
+        android:text="@string/intro"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_text_main"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <LinearLayout
+        android:id="@+id/securitySection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intoText"
+        app:layout_constraintVertical_bias="0.06999999">
+
+        <TextView
+            android:id="@+id/selectProtocol"
+            style="@style/inputStyle"
+            android:text="@string/protocolType" />
+
+        <RadioGroup
+            android:id="@+id/secure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/https"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/https"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/https" />
+
+            <RadioButton
+                android:id="@+id/http"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/http" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linkNameSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/securitySection"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/linkInputName"
+            style="@style/inputStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/linkInputText" />
+
+        <EditText
+            android:id="@+id/websiteName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/domainNameSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linkNameSection"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/linkInputName3"
+            style="@style/inputStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/domainText" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <RadioGroup
+                android:id="@+id/domainExtension"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/com"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:text="@string/com" />
+
+                <RadioButton
+                    android:id="@+id/in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:text="@string/in" />
+
+                <RadioButton
+                    android:id="@+id/net"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:text="@string/net" />
+
+                <RadioButton
+                    android:id="@+id/other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otherText" />
+            </RadioGroup>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/domainExtensionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/other_text"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/domainNameSection"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/build_and_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/build_and_load"
+        app:layout_constraintBottom_toBottomOf="@+id/webpage_loader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/domainExtensionText" />
+
+    <WebView
+        android:id="@+id/webpage_loader"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

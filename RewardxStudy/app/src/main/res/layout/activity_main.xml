@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/greetUser"
+        style="@style/basicTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_greet_text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <TextView
+        android:id="@+id/focus_text"
+        style="@style/basicTextStyle"
+        android:layout_width="220dp"
+        android:layout_height="53dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/day_stats"
+        app:layout_constraintBottom_toTopOf="@+id/rewardStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetUser"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <LinearLayout
+        android:id="@+id/rewardStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetUser"
+        app:layout_constraintVertical_bias="0.177">
+
+        <TextView
+            android:id="@+id/rewardText"
+            style="@style/basicTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reward_txt" />
+
+        <TextView
+            android:id="@+id/total_coins"
+            style="@style/basicTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/total_coins" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/colon"
+        style="@style/timeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/colon"
+        app:layout_constraintBottom_toTopOf="@+id/mineButton"
+        app:layout_constraintEnd_toStartOf="@+id/countdown_secs"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/countdown_mins"
+        app:layout_constraintTop_toBottomOf="@+id/rewardStatus" />
+
+    <EditText
+        android:id="@+id/countdown_mins"
+        style="@style/timeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:text="@string/countdown_time_inp1"
+        app:layout_constraintBottom_toTopOf="@+id/mineButton"
+        app:layout_constraintEnd_toStartOf="@+id/colon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rewardStatus"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <EditText
+        android:id="@+id/countdown_secs"
+        style="@style/timeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="@string/countdown_time_inp2"
+        app:layout_constraintBottom_toTopOf="@+id/mineButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/colon"
+        app:layout_constraintTop_toBottomOf="@+id/rewardStatus"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <Button
+        android:id="@+id/mineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mine_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colon" />
+
+    <TextView
+        android:id="@+id/timerCountText"
+        style="@style/timeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/mineButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rewardStatus" />
+</androidx.constraintlayout.widget.ConstraintLayout>

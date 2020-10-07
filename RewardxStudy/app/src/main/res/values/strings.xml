@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Reward x Study</string>
+    <string name="rewardStudyTitle">Reward X Study</string>
+    <string name="reward_txt">Total Coins Earned</string>
+    <string name="total_coins">₹0</string>
+    <string name="user_greet_text">Hello Rishabh!</string>
+    <string name="day_stats">You have stayed focused for 2 hours 15 mins today.</string>
+    <string name="countdown_time_inp1">10</string>
+    <string name="countdown_time_inp2">00</string>
+    <string name="mine_text"><![CDATA[Focus & Mine Coins]]></string>
+    <string name="cancel_text">Cancel Timer</string>
+    <string name="colon">:</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TextEditorApp</string>
+    <string name="app_Name">Text Editor App</string>
+    <string name="userInput">Enter A Message</string>
+    <string name="userMsg">Enter some message here</string>
+    <string name="sub">Submit</string>
+    <string name="screenTxt">Choose An Option</string>
+    <string name="concatenate">Combine Messages</string>
+    <string name="wCount">Word Count</string>
+    <string name="trimTxt">Trim</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LinearLayoutApp</string>
+    <string name="app_Title">Message Sending App</string>
+    <string name="hintName">To</string>
+    <string name="hintEmail">Email ID of Recipient</string>
+    <string name="hintMsg">Enter Your Message</string>
+    <string name="send">Send</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_color"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment Testing App"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/fragmentBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/fragment_color"
+            android:text="Add"
+            android:textSize="30sp" />
+
+        <Button
+                android:id="@+id/buttonPopFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/fragment_color"
+                android:text="Pop"
+                android:textSize="30sp" />
+        <Button
+                android:id="@+id/buttonRemoveFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/fragment_color"
+                android:text="Remove"
+                android:textSize="30sp" />
+
+    </LinearLayout><![CDATA[
+
+    />
+    ]]>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFragmentCount"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="#27000000"
+        android:layout_margin="10dp"
+        />
+    <FrameLayout
+        android:layout_margin="5dp"
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

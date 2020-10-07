@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#325563"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/inputSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="#8F6CEF53"
+        android:backgroundTint="#1E88E5"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/enterNewTask"
+            style="@style/basic_font_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:ems="10"
+            android:hint="@string/inputHint"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.051" />
+
+        <Button
+            android:id="@+id/add_task_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="16dp"
+            android:text="@string/add_task_button"
+            app:layout_constraintBaseline_toBaselineOf="@+id/enterNewTask"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.91"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/taskOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="#8F6CEF53"
+        android:backgroundTint="#C9205E9B"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/chosen_item"
+            style="@style/basic_font_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/delete_task_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/delete_task" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/outputSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/myTasksView"
+            style="@style/basic_font_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="20dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:smoothScrollbar="true"
+            android:dividerHeight="2dp"
+            android:divider="@android:color/white"
+            android:textAlignment="center"
+            android:verticalScrollbarPosition="right"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    tools:context=".MainActivity">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="First Name"
+            style="@style/labelStyle" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/fName"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:width="100dp"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/labelStyle"
+            android:text="Last Name" />
+        <EditText
+            android:id="@+id/lName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:width="100dp"
+            />
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            style="@style/labelStyle"
+            android:text="Form Number" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_column="3"
+                android:id="@+id/number"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:inputType="number"
+                />
+    </TableRow>
+    <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Submit"
+                    android:id="@+id/button"
+                    android:layout_column="2"
+                    />
+    </TableRow>
+
+</TableLayout>

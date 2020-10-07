@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WebView Application</string>
+    <string name="title_of_app">Link Builder</string>
+    <string name="intro">Choose the options, enter the name of the website which you want to access, and click on build to see if the website link works or not.</string>
+    <string name="https">https</string>
+    <string name="http">http</string>
+    <string name="protocolType">Choose a Protocol</string>
+    <string name="linkInputText">Enter the name of Website</string>
+    <string name="domainText">Choose Domain Extension</string>
+    <string name="com">.com</string>
+    <string name="in">.in</string>
+    <string name="other_text">Other Extension</string>
+    <string name="net">.net</string>
+    <string name="build_and_load"><![CDATA[Build & Load]]></string>
+    <string name="otherText">Other</string>
+</resources>

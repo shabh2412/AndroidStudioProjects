@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Locate Me</string>
+    <string name="page_title">Locate Yourself</string>
+    <string name="locate_self">Locate Now!</string>
+</resources>
