@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Notes App</string>
+    <string name="app_main_title">Note Maker App</string>
+    <string name="user_helper">Type your notes below, and click save. View your notes by clicking on View Button</string>
+    <string name="save">Save</string>
+    <string name="view">View</string>
+</resources>
