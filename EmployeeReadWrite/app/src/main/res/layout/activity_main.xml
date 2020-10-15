@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/txtName"
+            style="@style/generalEditTextStyle"
+            android:hint="@string/nameHint"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtRole"
+            style="@style/generalEditTextStyle"
+            android:hint="@string/roleHint"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtID"
+            style="@style/generalEditTextStyle"
+            android:hint="@string/idHint"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txtDept"
+            style="@style/generalEditTextStyle"
+            android:hint="@string/deptHint"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtPay"
+            style="@style/generalEditTextStyle"
+            android:hint="@string/payHint"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/generalButtonStyle"
+            android:text="@string/submit" />
+
+        <Button
+            android:id="@+id/btnLoad"
+            style="@style/generalButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/load" />
+    </LinearLayout>
+</ScrollView>

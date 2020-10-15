@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LBS</string>
+    <string name="btn_locate">Locate</string>
 </resources>

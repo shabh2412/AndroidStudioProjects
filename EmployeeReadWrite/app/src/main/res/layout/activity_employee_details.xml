@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EmployeeDetails">
+
+    <TextView
+        android:id="@+id/Name"
+        style="@style/generalTextViewStyle"
+        android:hint="@string/nameHint" />
+
+    <TextView
+        android:id="@+id/Role"
+        style="@style/generalTextViewStyle"
+        android:hint="@string/roleHint" />
+
+    <TextView
+        android:id="@+id/ID"
+        style="@style/generalTextViewStyle"
+        android:hint="@string/idHint" />
+
+    <TextView
+        android:id="@+id/Dept"
+        style="@style/generalTextViewStyle"
+        android:hint="@string/deptHint" />
+
+    <TextView
+        android:id="@+id/Pay"
+        style="@style/generalTextViewStyle"
+        android:hint="@string/payHint" />
+</LinearLayout>

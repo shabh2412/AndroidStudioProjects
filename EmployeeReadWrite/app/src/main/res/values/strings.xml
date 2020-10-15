@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Employee Read Write</string>
+    <string name="nameHint">What\'s your name?</string>
+    <string name="roleHint">What\'s your role?</string>
+    <string name="idHint">Your Employee ID</string>
+    <string name="deptHint">Your Department?</string>
+    <string name="payHint">Salary?</string>
+    <string name="submit">Submit</string>
+    <string name="load">Load Previous Data</string>
+</resources>
