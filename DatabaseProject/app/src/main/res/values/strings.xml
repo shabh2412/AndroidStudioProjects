@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Database Project</string>
+    <string name="name_Hint">Student Name</string>
+    <string name="name_label">Student Name</string>
+    <string name="branch_label">Branch</string>
+    <string name="roll_label">ROLL NO</string>
+    <string name="score_label">Score</string>
+    <string name="add_btn_label">Add Data</string>
+    <string name="get_btn_label">View Stored Data</string>
+    <string name="roll_txt">Roll : </string>
+    <string name="branch_txt">Branch : </string>
+    <string name="marks_txt">Marks : </string>
+    <string name="no_data_available">No data available</string>
 </resources>
