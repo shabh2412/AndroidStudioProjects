@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">La Musica</string>
+    <string name="albums">Albums</string>
+    <string name="songs">Songs</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BluetoothWifi</string>
+    <string name="bluetooth_wifi"><![CDATA[Bluetooth & Wifi]]></string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="wifi">WiFi</string>
+    <string name="turn_on">Turn On</string>
+    <string name="turn_off">Turn Off</string>
+</resources>
