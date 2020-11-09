@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyPhone</string>
+    <string name="get_details">Get Details</string>
+    <string name="phone_info">Phone Info</string>
+    <string name="device_id">Device ID</string>
+    <string name="phone_type">Phone Type</string>
+    <string name="network_country_iso">Network Country ISO</string>
+    <string name="sim_country_code">Sim Country Code</string>
+    <string name="roaming_status">Roaming Status</string>
+</resources>
