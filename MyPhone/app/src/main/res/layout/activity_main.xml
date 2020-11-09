@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/getDetails"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/device_id_Layout"
+        android:id="@+id/android_id_id_Layout"
         style="@style/basic_tv_style"
-        android:hint="@string/device_id"
-        app:hintTextColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/phone_Type_Layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:hint="@string/android_id"
+        app:hintTextColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/device_id"
+            android:id="@+id/android_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/nephritis"
@@ -30,16 +26,11 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-
         android:id="@+id/phone_Type_Layout"
+
         style="@style/basic_tv_style"
         android:hint="@string/phone_type"
-        app:hintTextColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/network_country_iso_Layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/device_id_Layout">
+        app:hintTextColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/phone_Type"
@@ -56,13 +47,7 @@
         android:id="@+id/network_country_iso_Layout"
         style="@style/basic_tv_style"
         android:hint="@string/network_country_iso"
-        app:hintTextColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@id/sim_country_layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/phone_Type_Layout"
-        tools:layout_editor_absoluteY="233dp">
+        app:hintTextColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/network_country_iso"
@@ -80,13 +65,7 @@
         android:id="@+id/sim_country_layout"
         style="@style/basic_tv_style"
         android:hint="@string/sim_country_code"
-        app:hintTextColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@id/roaming_Layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/network_country_iso_Layout"
-        tools:layout_editor_absoluteY="233dp">
+        app:hintTextColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/sim_country_code"
@@ -104,13 +83,7 @@
         android:id="@+id/roaming_Layout"
         style="@style/basic_tv_style"
         android:hint="@string/roaming_status"
-        app:hintTextColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@id/get_details_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sim_country_layout"
-        tools:layout_editor_absoluteY="233dp">
+        app:hintTextColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/roaming"
@@ -129,11 +102,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="getDetails"
-        android:text="@string/get_details"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/roaming_Layout"
-        tools:layout_editor_absoluteY="535dp" />
+        android:text="@string/get_details" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

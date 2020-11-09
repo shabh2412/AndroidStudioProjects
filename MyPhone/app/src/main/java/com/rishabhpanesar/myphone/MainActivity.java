@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.view.View;
 
@@ -24,12 +25,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_PHONE_STATE}, PackageManager.PERMISSION_GRANTED);
-
-
     }
 
     public void getDetails(View view) {
         TelephonyManager telephonyManager = (TelephonyManager) this.getSystemService(this.TELEPHONY_SERVICE);
+        binding.androidId.setText(Settings.Secure.getString(getContentResolver(),Settings.Secure.ANDROID_ID));
         String networkCountryISO = telephonyManager.getNetworkCountryIso();
         String SIMCountryCode = telephonyManager.getSimCountryIso();
         int phoneType = telephonyManager.getPhoneType();
