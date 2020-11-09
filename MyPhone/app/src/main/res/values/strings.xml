@@ -7,4 +7,5 @@
     <string name="network_country_iso">Network Country ISO</string>
     <string name="sim_country_code">Sim Country Code</string>
     <string name="roaming_status">Roaming Status</string>
+    <string name="mac_address">MAC Address</string>
 </resources>

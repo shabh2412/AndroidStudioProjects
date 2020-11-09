@@ -96,6 +96,23 @@
             tools:text="12345abcde" />
 
     </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/macAdd"
+        style="@style/basic_tv_style"
+        android:hint="@string/mac_address"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/nephritis"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black"
+            tools:text="12345abcde" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/get_details_button"

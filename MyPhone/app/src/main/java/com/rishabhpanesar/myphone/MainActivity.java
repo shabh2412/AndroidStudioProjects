@@ -3,6 +3,8 @@ package com.rishabhpanesar.myphone;
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
@@ -49,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
         binding.roaming.setText(telephonyManager.isNetworkRoaming() ? "Roaming" : "Not Roaming");
-
         binding.networkCountryIso.setText(networkCountryISO);
         binding.simCountryCode.setText(SIMCountryCode);
 //        binding.textView1.setText(info);
