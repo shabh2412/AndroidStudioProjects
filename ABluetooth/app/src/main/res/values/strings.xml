@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ABluetooth</string>
+    <string name="bluetooth_status">Bluetooth Status</string>
+    <string name="turn_off_bluetooth">Turn Off Bluetooth</string>
+    <string name="turn_on_bluetooth">Turn On Bluetooth</string>
+    <string name="find_paired_devices">Find Paired Devices</string>
+    <string name="paired_devices">Paired Devices</string>
+</resources>
