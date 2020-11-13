@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ASms</string>
+    <string name="receiver_s_number">Receiver`s Number</string>
+    <string name="your_message">Your Message</string>
+    <string name="send_message">Send Message</string>
+    <string name="sms_sender">SMS Sender</string>
+</resources>
