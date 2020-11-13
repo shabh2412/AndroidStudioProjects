@@ -4,31 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="center_horizontal"
+    android:layout_marginVertical="32dp"
     android:orientation="vertical"
-    android:padding="8dp"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
+        android:layout_marginVertical="32dp"
         android:layout_height="wrap_content"
-        android:text="Alert Dialog!"
-        style="@style/tvStyle"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        style="@style/tvStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Learning Android Dialog!" />
+        android:text="@string/click_the_button_to_see_the_alert_dialog"/>
     <Button
         android:layout_width="match_parent"
         android:id="@+id/button"
         android:onClick="open"
-        android:text="Alert Dialog"
-        style="@style/tvStyle"
+        android:text="@string/generate_alert_dialog"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
         android:layout_height="wrap_content"/>
 
 </LinearLayout>

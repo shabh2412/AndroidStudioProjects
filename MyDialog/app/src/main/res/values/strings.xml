@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyDialog</string>
+    <string name="click_the_button_to_see_the_alert_dialog">Click the button to see the alert dialog</string>
+    <string name="generate_alert_dialog">Generate Alert Dialog</string>
 </resources>
