@@ -54,10 +54,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnView:
                 SharedPreferences sharedPreferences1 = getSharedPreferences("Notes", MODE_PRIVATE);
-                String note = sharedPreferences1.getString("note", "NA");
                 int count1 = sharedPreferences1.getInt("count", 0);
                 Intent intent = new Intent(MainActivity.this, NotesWindow.class);
-                intent.putExtra("notes", note);
                 intent.putExtra("count", count1);
                 startActivity(intent);
                 break;
