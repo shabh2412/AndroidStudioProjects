@@ -14,7 +14,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
 import com.rishabhpanesar.asms.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class  MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
 
     @Override
